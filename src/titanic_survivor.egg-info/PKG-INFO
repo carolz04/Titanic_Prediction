@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: titanic-survivor
+Version: 0.1.0
+Summary: This is a sample project to test our ML skills
+Author-email: Blessy <carolblessy15@gmail.com>
+License-Expression: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: notebook
+Requires-Dist: pandas
+
+# Titanic Survivor

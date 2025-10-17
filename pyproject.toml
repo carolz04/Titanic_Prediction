@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "titanic-survivor"
+version = "0.1.0"
+description = "This is a sample project to test our ML skills"
+authors = [{ name = "Blessy", email = "carolblessy15@gmail.com" }]
+dependencies = [
+    "notebook",
+    "pandas"
+]
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]
+
+[tool.mypy]
+strict = true
+
+[tool.ruff]
+select = ["E", "F"]

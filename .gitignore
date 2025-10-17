@@ -1,0 +1,3 @@
+.venv
+src/data/
+src/data/titanic_survivor.egg-info/

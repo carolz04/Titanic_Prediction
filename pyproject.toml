@@ -9,7 +9,8 @@ description = "This is a sample project to test our ML skills"
 authors = [{ name = "Blessy", email = "carolblessy15@gmail.com" }]
 dependencies = [
     "notebook",
-    "pandas"
+    "pandas",
+    "sklearn"
 ]
 readme = "README.md"
 license = "MIT"

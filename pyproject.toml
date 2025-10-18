@@ -9,7 +9,8 @@ description = "This is a sample project to test our ML skills"
 authors = [{ name = "Blessy", email = "carolblessy15@gmail.com" }]
 dependencies = [
     "notebook",
-    "pandas"
+    "pandas",
+    "scikit-learn"
 ]
 readme = "README.md"
 license = "MIT"
@@ -19,7 +20,7 @@ requires-python = ">=3.11"
 where = ["src"]
 
 [tool.black]
-line-length = 88
+line-length = 100
 target-version = ["py38"]
 
 [tool.mypy]

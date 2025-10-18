@@ -8,5 +8,6 @@ Requires-Python: >=3.11
 Description-Content-Type: text/markdown
 Requires-Dist: notebook
 Requires-Dist: pandas
+Requires-Dist: scikit-learn
 
 # Titanic Survivor

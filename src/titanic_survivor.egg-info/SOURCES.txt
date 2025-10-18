@@ -1,7 +1,0 @@
-README.md
-pyproject.toml
-src/titanic_survivor.egg-info/PKG-INFO
-src/titanic_survivor.egg-info/SOURCES.txt
-src/titanic_survivor.egg-info/dependency_links.txt
-src/titanic_survivor.egg-info/requires.txt
-src/titanic_survivor.egg-info/top_level.txt

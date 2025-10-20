@@ -9,5 +9,8 @@ Description-Content-Type: text/markdown
 Requires-Dist: notebook
 Requires-Dist: pandas
 Requires-Dist: scikit-learn
+Requires-Dist: python-dotenv
+Requires-Dist: loguru
+Requires-Dist: pydantic
 
 # Titanic Survivor

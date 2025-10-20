@@ -1,3 +1,6 @@
 notebook
 pandas
 scikit-learn
+python-dotenv
+loguru
+pydantic

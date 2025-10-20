@@ -10,7 +10,10 @@ authors = [{ name = "Blessy", email = "carolblessy15@gmail.com" }]
 dependencies = [
     "notebook",
     "pandas",
-    "scikit-learn"
+    "scikit-learn",
+    "python-dotenv", 
+    "loguru",
+    "pydantic"
 ]
 readme = "README.md"
 license = "MIT"

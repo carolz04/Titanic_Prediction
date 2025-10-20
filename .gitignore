@@ -8,3 +8,4 @@ src/titanic_survivor.egg-info/
 .DS_Store
 .env
 .ipynb_checkpoints/
+src/utils/__pycache__/

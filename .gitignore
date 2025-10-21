@@ -1,6 +1,6 @@
 .venv
 data/*
-src/titanic_survivor.egg-info/
+src/titanic_survivor.egg-info/*
 .ruff_cache/
 .mypy_cache/
 .pytest_cache/
@@ -8,4 +8,7 @@ src/titanic_survivor.egg-info/
 .DS_Store
 .env
 .ipynb_checkpoints/
-src/utils/__pycache__/
+src/utils/__pycache__/*
+src/processing/__pycache__/*
+src/tasks/__pycache__/*
+src/notebook/__pycache__/*

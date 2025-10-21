@@ -13,7 +13,9 @@ dependencies = [
     "scikit-learn",
     "python-dotenv", 
     "loguru",
-    "pydantic"
+    "pydantic",
+    "pandantic",
+    "mlflow"
 ]
 readme = "README.md"
 license = "MIT"

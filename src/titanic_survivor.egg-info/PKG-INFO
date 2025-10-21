@@ -12,5 +12,7 @@ Requires-Dist: scikit-learn
 Requires-Dist: python-dotenv
 Requires-Dist: loguru
 Requires-Dist: pydantic
+Requires-Dist: pandantic
+Requires-Dist: mlflow
 
 # Titanic Survivor

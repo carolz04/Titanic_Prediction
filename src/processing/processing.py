@@ -1,19 +1,29 @@
 import pandas as pd
-from typing import List
-from pydantic import BaseModel
-from .schemas import TitanicPassenger
+from .schemas import TitanicSchema
+from pandantic import Pandantic
+from utils.readers import CSVReader
+from loguru import logger
 
-def dataframe_to_pydantic(df: pd.DataFrame, model_class) -> List[BaseModel]:
-    """Convert DataFrame rows to list of Pydantic models"""
-    models = []
-    for _, row in df.iterrows():
-        # Convert NaN values to None for Pydantic compatibility
-        row_dict = row.to_dict()
-        row_dict = {k: (v if pd.notna(v) else None) for k, v in row_dict.items()}
-        
-        model = model_class(**row_dict)
-        models.append(model)
-    
-    return models
+
+def df_to_pydantic(data: pd.DataFrame= None, data_type: str='training'):
+    if data is not None:
+        df = data.copy()
+    else:
+        reader = CSVReader(data_type=data_type)
+        df = reader.read_csv()
+
+    try: 
+        validator = Pandantic(schema=TitanicSchema)
+        df_validated = validator.validate(dataframe=df, errors="raise")
+       
+        logger.info(f"Data validated successfully: {df_validated}")
+
+        cabin_values = df['Cabin'].dropna()
+        if len(cabin_values)>0:
+            most_frequent_cabin = cabin_values.mode().iloc[0]
+        return df_validated
+    except Exception as e:
+        logger.error(f"Validation error: {e}")
+        return None
 
 

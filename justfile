@@ -8,5 +8,5 @@ lint:
     ruff check .
 
 
-transform_data data_type="training":
-    cd Titanic_Prediction && uv run python -m src.tasks.transform --data-type "{{data_type}}"
+transform_data training:
+    uv run python -m src.tasks.transform --data-type "training"

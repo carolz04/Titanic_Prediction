@@ -1,0 +1,14 @@
+artifact_uri: file:///home/carol/titanic/Titanic_Prediction/mlruns/358658883133327308/f7926602d37f4adb823d3118ca77a9c6/artifacts
+end_time: 1761154963032
+entry_point_name: ''
+experiment_id: '358658883133327308'
+lifecycle_stage: active
+run_id: f7926602d37f4adb823d3118ca77a9c6
+run_name: carefree-eel-882
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761154963015
+status: 4
+tags: []
+user_id: carol

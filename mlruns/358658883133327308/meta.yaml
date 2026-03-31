@@ -1,0 +1,6 @@
+artifact_location: file:///home/carol/titanic/Titanic_Prediction/mlruns/358658883133327308
+creation_time: 1761154961984
+experiment_id: '358658883133327308'
+last_update_time: 1761154961984
+lifecycle_stage: active
+name: titanic-experiment
